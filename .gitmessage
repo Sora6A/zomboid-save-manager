@@ -1,0 +1,20 @@
+# 删除说明注释，填写具体标题与各字段。使用 git commit 打开本模板。
+# type(scope): 具体变化摘要
+
+Why:
+# 背景、问题与目标
+
+Changes:
+# 改动范围、关键实现
+
+Validation:
+# 实际命令、环境、结果；未验证项及原因
+
+Risks:
+# 数据与兼容性影响、回滚方式
+
+Refs:
+# Issue、PR、文档或具体任务描述
+
+# fix 类型必须取消下一行注释并替换为真实记录路径。
+# Bugfix: docs/bugfixes/YYYY-MM-DD-short-name.md
