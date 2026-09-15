@@ -1,0 +1,2 @@
+# Optional but recommended: used to detect whether Project Zomboid is running.
+psutil>=5.9,<8

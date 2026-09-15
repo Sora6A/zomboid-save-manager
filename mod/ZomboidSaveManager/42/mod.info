@@ -1,0 +1,5 @@
+name=Zomboid Save Manager Bridge
+id=ZomboidSaveManagerBridge
+description=Connects the in-game BK button and F8/F9 hotkeys to the Windows save manager (Build 42).
+modversion=1.1.8
+versionMin=42.0
