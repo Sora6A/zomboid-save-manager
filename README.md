@@ -6,7 +6,7 @@ Windows companion app and Lua bridge for Project Zomboid save backups.
 
 > 当前状态：个人工具的源码整理版。Build 41 / 42 是布局兼容目标，具体游戏版本、安装与联动仍需实机确认；参见[验证记录](docs/VALIDATION.md)和[已知问题](docs/TROUBLESHOOTING.md)。
 
-文档：[安装与使用](#推荐安装方式mod-联动版) · [架构](docs/ARCHITECTURE.md) · [排错](docs/TROUBLESHOOTING.md) · [开发](docs/DEVELOPMENT.md) · [版本记录](CHANGELOG.md)
+文档：[安装与使用](#推荐安装方式mod-联动版) · [架构](docs/ARCHITECTURE.md) · [排错](docs/TROUBLESHOOTING.md) · [开发](docs/DEVELOPMENT.md) · [贡献流程](CONTRIBUTING.md) · [提交规范](docs/COMMIT_CONVENTION.md) · [Bugfix 记录](docs/bugfixes/README.md) · [版本记录](CHANGELOG.md)
 
 这是一个面向 Windows 的《僵尸毁灭工程》存档保护系统，由本地 GUI 伴生程序、游戏内 Mod 和 Steam 联动启动器组成。
 
@@ -132,11 +132,15 @@ ZomboidSaveManager.exe --launch-game --minimized --exit-with-game
 在项目目录打开命令提示符：
 
 ```bat
-python -m py_compile backup_core.py game_integration.py install_windows.py zomboid_save_manager.py start.pyw
+python -m py_compile backup_core.py game_integration.py install_windows.py zomboid_save_manager.py start.pyw scripts/check_development_policy.py
 python -m unittest discover -s tests -v
 ```
 
 测试只使用临时目录，不会接触真实游戏存档。
+
+## 参与开发与维护
+
+所有改动从 `main` 创建任务分支，提交完整的原因、改动、验证、风险与关联记录，通过 PR 和 CI 后 merge 到远程 `main`。每个 bug 修复必须在同一提交附带修复代码、单元回归测试和包含原因 / 复现 / 方案 / 测试的 bugfix 文档。开发者和代码助手请先阅读 [AGENTS.md](AGENTS.md) 与 [贡献流程](CONTRIBUTING.md)。
 
 ## 重要提醒
 

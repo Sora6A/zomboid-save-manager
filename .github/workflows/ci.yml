@@ -25,6 +25,6 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
       - name: Compile every Python entry point
-        run: python -m py_compile backup_core.py game_integration.py install_windows.py zomboid_save_manager.py start.pyw
+        run: python -m py_compile backup_core.py game_integration.py install_windows.py zomboid_save_manager.py start.pyw scripts/check_development_policy.py
       - name: Regression tests
         run: python -m unittest discover -s tests -v

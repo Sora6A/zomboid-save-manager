@@ -4,5 +4,9 @@
 *.lua text eol=lf
 *.md text eol=lf
 *.yml text eol=lf
+*.yaml text eol=lf
 *.info text eol=lf
 *.bat text eol=crlf
+.gitmessage text eol=lf
+.editorconfig text eol=lf
+.gitattributes text eol=lf
